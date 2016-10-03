@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpeedChat</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header class="header">
+    <a href="index.html" class="header__logo">SpeedChat</a>
+    <span class="header__text">Menu</span>
+    <button id="hamburger" class="header__btn hamburger hamburger--elastic" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+</header>
+<div class="main clear-fix">
+    <div id="sidebar" class="sidebar clear-fix">
+        <a href="index.html" class="sidebar__logo">
+            <img src="img/logo.png" alt="speedchat">
+        </a>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Главная</a>
+                    <i class="nav__icon icon--home"></i>
+                </li>
+                <li class="nav__item">
+                    <a href="speedchat.html" class="nav__link">SpeedChat</a>
+                    <i class="nav__icon icon--heart"></i>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">SpeedStat</a>
+                    <i class="nav__icon icon--chart-bar"></i>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Помощь</a>
+                    <i class="nav__icon icon--lightbulb"></i>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link">Активация</a>
+                    <i class="nav__icon icon--key"></i>
+                </li>
+                <li class="nav__item nav__item--active">
+                    <span class="nav__link">Контакты</span>
+                    <i class="nav__icon icon--mail"></i>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="index-content">
+        <div class="wrapper">
+            <section class="contacts contacts--mb clear-fix">
+                <h2 class="contacts__title">Контактная информация</h2>
+                <a href="" class="contacts__email-link"><i class="contacts__icon icon--mail"></i>speedchat@live.ru</a>
+                <a href="" class="contacts__skype-link"><i class="contacts__icon icon--skype"></i>speed.chat</a>
+                <form class="contacts__form clear-fix" action="/echo" method="post">
+                    <input class="contacts__login" type="text" name="login" placeholder="Ваше имя" required>
+                    <input class="contacts__email" type="email" name="email" placeholder="Обратный адрес (e-mail)" required>
+                    <textarea class="contacts__textarea" name="textarea" placeholder="Текст сообщения"></textarea>
+                    <button class="contacts__btn" type="submit">
+                        <i class="contacts__icon icon--paper-plane-empty"></i>
+                        <span class="contacts__btn-text">Отправить</span>
+                    </button>
+                </form>
+            </section>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="wrapper clear-fix">
+        <p class="footer__copyright">© 2016 SpeedChat. All Rights Reserved</p>
+        <a class="footer__link" href="">Пользовательское соглашение</a>
+    </div>
+</footer>
+
+<script src="js/main.min.js"></script>
+</body>
+</html>
