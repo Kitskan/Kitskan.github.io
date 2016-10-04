@@ -60,7 +60,7 @@
 }
 
 function editlist(btn, list, classBtn, classList) {
-  resizeList(help_btn, help_list, classBtn, classList);
+  //resizeList(help_btn, help_list, classBtn, classList);
   for (var j = 0; j < btn.length; j++) {
     listListiner(btn[j], list, j);
   }
@@ -69,7 +69,7 @@ function editlist(btn, list, classBtn, classList) {
 editlist(help_btn, help_list, clsBtn, clsList);
 
 window.addEventListener('resize', function () {
-  resizeList(help_btn, help_list, clsBtn, clsList);
+  //resizeList(help_btn, help_list, clsBtn, clsList);
 });
 
 })
