@@ -53,6 +53,18 @@
           elem2[i].classList.add(clsList);
         }
       });
+      elem.addEventListener('touch', function (e) {
+        e.preventDefault();
+        if (window.innerWidth < 992) {
+          elem.classList.toggle(clsBtn);
+          elem2[i].classList.toggle(clsList);
+        } else {
+          cleanList(help_btn, clsBtn);
+          cleanList(help_list, clsList);
+          elem.classList.add(clsBtn);
+          elem2[i].classList.add(clsList);
+        }
+      });
     }
 
     function editlist(btn, list, classBtn, classList) {
