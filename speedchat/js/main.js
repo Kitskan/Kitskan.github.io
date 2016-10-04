@@ -65,7 +65,7 @@
     editlist(help_btn, help_list, clsBtn, clsList);
 
     window.addEventListener('resize', function () {
-      resizeList(help_btn, help_list, clsBtn, clsList);
+      //resizeList(help_btn, help_list, clsBtn, clsList);
     });
 
   })();
