@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpeedChat</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<!--Header-->
+<header class="header">
+  <a href="index.html" class="header__logo">SpeedChat</a>
+  <span class="header__text">Menu</span>
+  <button id="hamburger" class="header__btn hamburger hamburger--elastic" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+  </button>
+</header>
+
+<!--Main content-->
+<div class="main clear-fix">
+  <!--Sidebar-->
+  <div id="sidebar" class="sidebar clear-fix">
+    <a href="index.html" class="sidebar__logo">
+      <img src="img/logo.png" alt="speedchat">
+    </a>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="index.html" class="nav__link">Главная</a>
+          <i class="nav__icon icon--home"></i>
+        </li>
+        <li class="nav__item">
+          <a href="speedchat.html" class="nav__link">SpeedChat</a>
+          <i class="nav__icon icon--heart"></i>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">SpeedStat</a>
+          <i class="nav__icon icon--chart-bar"></i>
+        </li>
+        <li class="nav__item nav__item--active">
+          <span class="nav__link">Помощь</span>
+          <i class="nav__icon icon--lightbulb"></i>
+        </li>
+        <li class="nav__item">
+          <a href="" class="nav__link">Активация</a>
+          <i class="nav__icon icon--key"></i>
+        </li>
+        <li class="nav__item">
+          <a href="contacts.html" class="nav__link">Контакты</a>
+          <i class="nav__icon icon--mail"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--Main Content-->
+  <div class="main-content clear-fix">
+    <div class="wrapper">
+      <div id="help" class="help">
+        <button id="faq__btn" class="help__btn help__btn--faq"><span>Частые вопросы</span></button>
+          <ul id="faq__list" class="help__list">
+            <!--item1-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Как получить тестовый период?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              Просто установите плагин и зайдите под любой анкетой, автоматически получите 3 дня тестового периода
+            </li>
+            <!--item2-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Какими браузерами поддерживается плагин?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              Google Chrome, Яндекс.Браузер, Рамблер Нихром, Comodo Dragon, CoolNovo, SRWare Iron, Интернет@mail.ru, QIP Surf, Torch
+            </li>
+            <!--item3-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Как включить плагин после обновления разрешений плагина?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              <ul class="help__list-inner">
+                <li class="help__item-inner">- Откройте меню Chrome Chrome menu на панели инструментов браузера и выберите Инструменты -> Расширения</li>
+                <li class="help__item-inner">- Найдите в списке SpeedChat</li>
+                <li class="help__item-inner">- Поставьте галочку «Включить» напротив плагина</li>
+              </ul>
+            </li>
+            <!--item4-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Как в одном браузере открыть одновременно несколько разных профилей/анкет?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              <ul class="help__list-inner">
+                <li class="help__item-inner">- Откройте меню Chrome Chrome menu на панели инструментов браузера и выберите Настройки</li>
+                <li class="help__item-inner">- В разделе «Пользователи» нажмите Добавить пользователя</li>
+                <li class="help__item-inner">- В открывшемся диалоговом окне подтверждения выберите изображение и введите имя нового пользователя Chrome</li>
+                <li class="help__item-inner">- Нажмите Создать</li>
+                <li class="help__item-inner">- Откроется новое окно, в верхней части которого будет отображаться выбранная для этого пользователя картинка профиля</li>
+                <li class="help__item-inner">- После этого установите плагин используя инструкцию сверху</li>
+              </ul>
+            </li>
+            <!--item5-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Где посмотреть идентификатор анкеты?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              <ul class="help__list-inner">
+                <li class="help__item-inner">В окне плагина, слева сверху. Например: 2:c:123456789</li>
+                <li class="help__item-inner">
+                  <a class="help__link" href="img/help_faq_img.png" target="_blank">
+                    <img class="help__img" src="img/help_faq_img.png" alt="faq img">
+                  </a>
+                </li>
+                <li class="help__item-inner">Идентификатор находиться сверху слева в плагине</li>
+              </ul>
+            </li>
+            <!--item6-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Как пополнить программу?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              Для продления активации нужно перейти в раздел «Активация», ввести идентификаторы анкет(смотреть выше) и нажать «Оплатить», далее следуйте инструкциям платежной системы
+            </li>
+            <!--item7-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Что делать со старой версией программы?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              Удалите ее, перейдя в chrome по адресу
+              <a class="help__link help__link--extension" href="chrome://extensions/" target="_blank">chrome://extensions/</a>
+              , найдите бывший плагин и нажмите на корзину возле него
+            </li>
+          </ul>
+
+        <button id="instructions__btn" class="help__btn help__btn--instr"><span>Инструкции</span></button>
+          <ul id="instructions__list" class="help__list">
+            <!--item1-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Как получить тестовый период?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              <ul class="help__list-inner">
+                <li class="help__item-inner">
+                  Просто установите плагин и зайдите под любой анкетой, автоматически получите 3 дня тестового периода
+                </li>
+                <li class="help__item-inner">
+                  <a class="help__link" href="img/instr_image.jpg" target="_blank">
+                    <img class="help__img" src="img/instr_image.jpg" alt="help image">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--item2-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Как включить плагин после обновления разрешений плагина?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              <ul class="help__list-inner">
+                <li class="help__item-inner">
+                  - Откройте меню Chrome Chrome menu на панели инструментов браузера и выберите Инструменты -> Расширения
+                </li>
+                <li class="help__item-inner">
+                  - Найдите в списке SpeedChat
+                </li>
+                <li class="help__item-inner">
+                  - Поставьте галочку «Включить» напротив плагина
+                </li>
+                <li class="help__item-inner">
+                  <a class="help__link" href="img/instr_image.jpg" target="_blank">
+                    <img class="help__img" src="img/instr_image.jpg" alt="Instructions image">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <!--item3-->
+            <li class="help__item help__item--question">
+              <i class="help__icon icon--help-circled"></i>
+              Где посмотреть идентификатор анкеты?
+            </li>
+            <li class="help__item help__item--answer">
+              <i class="help__icon icon--right-circled"></i>
+              <ul class="help__list-inner">
+                <li class="help__item-inner">
+                  В окне плагина, слева сверху. Например: 2:c:123456789
+                </li>
+                <li class="help__item-inner">
+                  <a class="help__link" href="img/instr_image.jpg" target="_blank">
+                    <img class="help__img" src="img/instr_image.jpg" alt="Instructions image">
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+  </div>
+</div>
+</div>
+<!--Footer-->
+<footer class="footer">
+  <div class="wrapper clear-fix">
+    <p class="footer__copyright">© 2016 SpeedChat. All Rights Reserved</p>
+    <a class="footer__link" href="">Пользовательское соглашение</a>
+  </div>
+</footer>
+
+<!--Popup-->
+<!--Class "popup-warning--off" close popup-->
+<div id="popup_warning" class="popup-warning ">
+  <i class="popup-warning__icon icon--wrench"></i>
+  Ведутся технические работы! Просим прощения за причиненные неудобства.
+  <i id="popup_warning_icon_close" class="popup-warning__icon icon--cancel"></i>
+</div>
+<!--JavaScript-->
+<script src="js/main.min.js"></script>
+
+</body>
+</html>

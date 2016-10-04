@@ -7,22 +7,13 @@
   <title>SpeedChat</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
-	
-
-
-<link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
-<link rel="manifest" href="manifest.json">
-<link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
-
-
-	
-	
-
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -30,6 +21,8 @@
   <![endif]-->
 </head>
 <body>
+
+<!--Header-->
 <header class="header">
   <a href="index.html" class="header__logo">SpeedChat</a>
   <span class="header__text">Menu</span>
@@ -39,6 +32,8 @@
       </span>
   </button>
 </header>
+
+<!--Main content-->
 <div class="main clear-fix">
   <div id="sidebar" class="sidebar clear-fix">
     <a href="index.html" class="sidebar__logo">
@@ -59,11 +54,11 @@
           <i class="nav__icon icon--chart-bar"></i>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">Помощь</a>
+          <a href="help.html" class="nav__link">Помощь</a>
           <i class="nav__icon icon--lightbulb"></i>
         </li>
         <li class="nav__item">
-          <a href="" class="nav__link">Активация</a>
+          <a href="activatione.html" class="nav__link">Активация</a>
           <i class="nav__icon icon--key"></i>
         </li>
         <li class="nav__item">
@@ -73,75 +68,85 @@
       </ul>
     </nav>
   </div>
-  <div class="index-content">
+  <div class="main-content">
     <div class="wrapper">
       <section class="info info--speedchat-bg clear-fix">
-      <h3 class="info__title">Наслаждайтесь общением!</h3>
-      <a href="" class="info__link">SpeedChat – автоматическая рассылка приглашений</a>
-      <a href="" class="download download--speedchat-bg"><i class="download__icon icon--chrome"></i>Загрузить</a>
+        <h3 class="info__title">Наслаждайтесь общением!</h3>
+        <a href="" class="info__link">SpeedChat – автоматическая рассылка приглашений</a>
+        <a href="" class="download download--speedchat-bg"><i class="download__icon icon--chrome"></i>Загрузить</a>
       </section>
       <section class="info info--speedstat-bg clear-fix">
-      <h3 class="info__title">Наслаждайтесь статистикой!</h3>
-      <a href="" class="info__link">SpeedStat – автоматическая статистика данных</a>
-      <a href="" class="download download--speedstat-bg"><i class="download__icon icon--chrome"></i>Загрузить</a>
+        <h3 class="info__title">Наслаждайтесь статистикой!</h3>
+        <a href="" class="info__link">SpeedStat – автоматическая статистика данных</a>
+        <a href="" class="download download--speedstat-bg"><i class="download__icon icon--chrome"></i>Загрузить</a>
       </section>
       <section class="news">
-      <h2 class="news__title">Новости и обновления</h2>
-      <ul class="news__list">
-        <li class="news__item">
-          <span class="news__date">03.09.14 &mdash;</span>
-          <a href="" class="news__link">Допилен макет сайта. Аминь.</a>
-        </li>
-        <li class="news__item">
-          <span class="news__date">03.09.14 &mdash;</span>
-          <a href="" class="news__link">Изящные па в финской крепости</a>
-        </li>
-        <li class="news__item">
-          <span class="news__date">03.09.14 &mdash;</span>
-          <a href="" class="news__link">Премьера оперы «Война и мир» на «Звёздах белых ночей»</a>
-        </li>
-        <li class="news__item">
-          <span class="news__date">03.09.14 &mdash;</span>
-          <a href="" class="news__link">Балетный конкурс в Варне отмечает 50-летие</a>
-        </li>
-        <li class="news__item">
-          <span class="news__date">03.09.14 &mdash;</span>
-          <a href="" class="news__link">Les Arts Florissants на фестивале «Звезды белых ночей»</a>
-        </li>
-        <li class="news__item">
-          <span class="news__date">03.09.14 &mdash;</span>
-          <a href="" class="news__link">Открытие фестиваля «Посольские дары»</a>
-        </li>
-        <li class="news__item">
-          <span class="news__date">03.09.14 &mdash;</span>
-          <a href="" class="news__link">Международный конкурс вокалистов в Минске</a>
-        </li>
-      </ul>
+        <h2 class="news__title">Новости и обновления</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <span class="news__date">03.09.14 &mdash;</span>
+            <a href="" class="news__link">Допилен макет сайта. Аминь.</a>
+          </li>
+          <li class="news__item">
+            <span class="news__date">03.09.14 &mdash;</span>
+            <a href="" class="news__link">Изящные па в финской крепости</a>
+          </li>
+          <li class="news__item">
+            <span class="news__date">03.09.14 &mdash;</span>
+            <a href="" class="news__link">Премьера оперы «Война и мир» на «Звёздах белых ночей»</a>
+          </li>
+          <li class="news__item">
+            <span class="news__date">03.09.14 &mdash;</span>
+            <a href="" class="news__link">Балетный конкурс в Варне отмечает 50-летие</a>
+          </li>
+          <li class="news__item">
+            <span class="news__date">03.09.14 &mdash;</span>
+            <a href="" class="news__link">Les Arts Florissants на фестивале «Звезды белых ночей»</a>
+          </li>
+          <li class="news__item">
+            <span class="news__date">03.09.14 &mdash;</span>
+            <a href="" class="news__link">Открытие фестиваля «Посольские дары»</a>
+          </li>
+          <li class="news__item">
+            <span class="news__date">03.09.14 &mdash;</span>
+            <a href="" class="news__link">Международный конкурс вокалистов в Минске</a>
+          </li>
+        </ul>
       </section>
       <section class="contacts clear-fix">
-      <h2 class="contacts__title">Контактная информация</h2>
-      <a href="" class="contacts__email-link"><i class="contacts__icon icon--mail"></i>speedchat@live.ru</a>
-      <a href="" class="contacts__skype-link"><i class="contacts__icon icon--skype"></i>speed.chat</a>
-      <form class="contacts__form clear-fix" action="/echo" method="post">
-        <input class="contacts__login" type="text" name="login" placeholder="Ваше имя" required>
-        <input class="contacts__email" type="email" name="email" placeholder="Обратный адрес (e-mail)" required>
-        <textarea class="contacts__textarea" name="textarea" placeholder="Текст сообщения"></textarea>
-        <button class="contacts__btn" type="submit">
-          <i class="contacts__icon icon--paper-plane-empty"></i>
-          <span class="contacts__btn-text">Отправить</span>
-        </button>
-      </form>
+        <h2 class="contacts__title">Контактная информация</h2>
+        <p class="contacts__email-link"><i class="contacts__icon icon--mail"></i>speedchat@live.ru</a>
+        <p class="contacts__skype-link"><i class="contacts__icon icon--skype"></i>speed.chat</a>
+        <form class="contacts__form clear-fix" action="/echo" method="post">
+          <input class="contacts__login" type="text" name="login" placeholder="Ваше имя" required>
+          <input class="contacts__email" type="email" name="email" placeholder="Обратный адрес (e-mail)" required>
+          <textarea class="contacts__textarea" name="textarea" placeholder="Текст сообщения"></textarea>
+          <button class="contacts__btn" type="submit">
+            <i class="contacts__icon icon--paper-plane-empty"></i>
+            <span class="contacts__btn-text">Отправить</span>
+          </button>
+        </form>
       </section>
     </div>
   </div>
 </div>
+
+<!--Footer-->
 <footer class="footer">
-    <div class="wrapper clear-fix">
-        <p class="footer__copyright">© 2016 SpeedChat. All Rights Reserved</p>
-        <a class="footer__link" href="">Пользовательское соглашение</a>
-    </div>
+  <div class="wrapper clear-fix">
+    <p class="footer__copyright">© 2016 SpeedChat. All Rights Reserved</p>
+    <a class="footer__link" href="">Пользовательское соглашение</a>
+  </div>
 </footer>
 
+<!--Popup-->
+<!--Class "popup-warning--off" close popup-->
+<div id="popup_warning" class="popup-warning">
+  <i class="popup-warning__icon icon--wrench"></i>
+  Ведутся технические работы! Просим прощения за причиненные неудобства.
+  <i id="popup_warning_icon_close" class="popup-warning__icon icon--cancel"></i>
+</div>
+<!--JavaScript-->
 <script src="js/main.min.js"></script>
 </body>
 </html>
