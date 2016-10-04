@@ -19,7 +19,8 @@
     e.preventDefault();
     popup_warning.classList.add('popup-warning--off');
   });
-
+  (function () {
+    if (help_page === null) return;
 
     function cleanList(arr, arrClass) {
       for (var i = 0; i < arr.length; i++) {
@@ -40,38 +41,34 @@
     }
 
     function listListiner(elem, elem2, i) {
-
-    if (window.innerWidth < 992) {
-      elem.addEventListener('touch', function (e) {
-        e.preventDefault();
-        elem.classList.toggle(clsBtn);
-        elem2[i].classList.toggle(clsList);
-      });
-    }else{
       elem.addEventListener('click', function (e) {
         e.preventDefault();
-        cleanList(help_btn, clsBtn);
-        cleanList(help_list, clsList);
-        elem.classList.add(clsBtn);
-        elem2[i].classList.add(clsList);
+        if (window.innerWidth < 992) {
+          elem.classList.toggle(clsBtn);
+          elem2[i].classList.toggle(clsList);
+        } else {
+          cleanList(help_btn, clsBtn);
+          cleanList(help_list, clsList);
+          elem.classList.add(clsBtn);
+          elem2[i].classList.add(clsList);
+        }
+      });
+    }
+
+    function editlist(btn, list, classBtn, classList) {
+      resizeList(help_btn, help_list, classBtn, classList);
+      for (var j = 0; j < btn.length; j++) {
+        listListiner(btn[j], list, j);
       }
-}
+    }
 
-}
+    editlist(help_btn, help_list, clsBtn, clsList);
 
-function editlist(btn, list, classBtn, classList) {
-  //resizeList(help_btn, help_list, classBtn, classList);
-  for (var j = 0; j < btn.length; j++) {
-    listListiner(btn[j], list, j);
-  }
-}
+    window.addEventListener('resize', function () {
+      resizeList(help_btn, help_list, clsBtn, clsList);
+    });
 
-editlist(help_btn, help_list, clsBtn, clsList);
+  })();
 
-window.addEventListener('resize', function () {
-  //resizeList(help_btn, help_list, clsBtn, clsList);
-});
 
-})
-();
-
+})();
