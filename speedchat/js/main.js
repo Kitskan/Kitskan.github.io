@@ -19,8 +19,7 @@
     e.preventDefault();
     popup_warning.classList.add('popup-warning--off');
   });
-  (function () {
-    if (help_page === null) return;
+
 
     function cleanList(arr, arrClass) {
       for (var i = 0; i < arr.length; i++) {
@@ -61,7 +60,7 @@
 }
 
 function editlist(btn, list, classBtn, classList) {
-  //resizeList(help_btn, help_list, classBtn, classList);
+  resizeList(help_btn, help_list, classBtn, classList);
   for (var j = 0; j < btn.length; j++) {
     listListiner(btn[j], list, j);
   }
@@ -76,6 +75,3 @@ window.addEventListener('resize', function () {
 })
 ();
 
-
-})
-();
