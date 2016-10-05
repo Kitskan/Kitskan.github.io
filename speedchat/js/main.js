@@ -33,7 +33,7 @@
         cleanList(list, classList);
         btn[0].classList.add(classBtn);
         list[0].classList.add(classList);
-      }else {
+      }else if(document.documentElement.clientWidth < 992){
         cleanList(btn, classBtn);
         cleanList(list, classList);
       }
