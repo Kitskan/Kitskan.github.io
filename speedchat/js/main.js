@@ -28,14 +28,11 @@
       }
     }
     function resizeList(btn, list, classBtn, classList) {
-      if (document.documentElement.clientWidth >= 992) {
+      if (window.innerWidth >= 992) {
         cleanList(btn, classBtn);
         cleanList(list, classList);
         btn[0].classList.add(classBtn);
         list[0].classList.add(classList);
-      }else if(document.documentElement.clientWidth < 992){
-        cleanList(btn, classBtn);
-        cleanList(list, classList);
       }
     }
     function onLoadList(btn, list, classBtn, classList) {
