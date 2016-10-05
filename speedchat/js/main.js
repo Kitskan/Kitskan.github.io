@@ -34,6 +34,9 @@
         cleanList(list, classList);
         btn[0].classList.add(classBtn);
         list[0].classList.add(classList);
+      }else {
+        cleanList(btn, classBtn);
+        cleanList(list, classList);
       }
     }
     function onLoadList(btn, list, classBtn, classList) {
