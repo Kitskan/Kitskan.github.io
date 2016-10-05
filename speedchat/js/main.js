@@ -301,7 +301,7 @@ if ("document" in self) {
       });
     }
     function editlist(btn, list, classBtn, classList) {
-      onLoadList(btn, list, classBtn, classList);
+      resizeList(btn, list, classBtn, classList);
       for (var j = 0; j < btn.length; j++) {
         listListiner(btn[j], list, j);
       }
