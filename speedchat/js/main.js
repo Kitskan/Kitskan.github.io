@@ -43,17 +43,15 @@
     function listListiner(elem, elem2, i) {
       elem.addEventListener('click', function (e) {
         e.preventDefault();
-        /*if (window.innerWidth < 992) {
-          elem.classList.toggle(clsBtn);
-          elem2[i].classList.toggle(clsList);
-        } else {
+        if (window.innerWidth >= 992) {
           cleanList(help_btn, clsBtn);
           cleanList(help_list, clsList);
           elem.classList.add(clsBtn);
           elem2[i].classList.add(clsList);
-        }*/
-        elem.classList.toggle(clsBtn);
-        elem2[i].classList.toggle(clsList);
+        } else {
+          elem.classList.toggle(clsBtn);
+          elem2[i].classList.toggle(clsList);
+        }
       });
     }
 
