@@ -43,7 +43,7 @@
     function listListiner(elem, elem2, i) {
       elem.addEventListener('click', function (e) {
         e.preventDefault();
-        if (window.innerWidth < 992) {
+        /*if (window.innerWidth < 992) {
           elem.classList.toggle(clsBtn);
           elem2[i].classList.toggle(clsList);
         } else {
@@ -51,12 +51,14 @@
           cleanList(help_list, clsList);
           elem.classList.add(clsBtn);
           elem2[i].classList.add(clsList);
-        }
+        }*/
+        elem.classList.toggle(clsBtn);
+        elem2[i].classList.toggle(clsList);
       });
     }
 
     function editlist(btn, list, classBtn, classList) {
-      resizeList(help_btn, help_list, classBtn, classList);
+      //resizeList(help_btn, help_list, classBtn, classList);
       for (var j = 0; j < btn.length; j++) {
         listListiner(btn[j], list, j);
       }
@@ -64,9 +66,9 @@
 
     editlist(help_btn, help_list, clsBtn, clsList);
 
-    window.addEventListener('resize', function () {
+    /*window.addEventListener('resize', function () {
       resizeList(help_btn, help_list, clsBtn, clsList);
-    });
+    });*/
 
   })();
 
