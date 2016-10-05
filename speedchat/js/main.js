@@ -27,9 +27,8 @@
         arr[i].classList.remove(arrClass);
       }
     }
-
     function resizeList(btn, list, classBtn, classList) {
-      if (window.innerWidth >= 992) {
+      if (document.documentElement.clientWidth >= 992) {
         cleanList(btn, classBtn);
         cleanList(list, classList);
         btn[0].classList.add(classBtn);
@@ -61,7 +60,6 @@
         }
       });
     }
-
     function editlist(btn, list, classBtn, classList) {
       onLoadList(btn, list, classBtn, classList);
       for (var j = 0; j < btn.length; j++) {
