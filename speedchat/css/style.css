@@ -479,6 +479,8 @@ textarea {
 }
 
 html {
+  min-width: 320px;
+  height: 100%;
   font-size: 14px;
   -webkit-tap-highlight-color: transparent;
 }
@@ -486,6 +488,7 @@ html {
 body {
   position: relative;
   min-width: 320px;
+  height: 100%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
@@ -768,11 +771,11 @@ hr {
 
 /* '' */
 
-.icon--credit-card-alt:before {
-  content: '\f283';
+.icon--credit-card:before {
+  content: '\e813';
 }
 
-/* '' */
+/* '' */
 
 .icon--wrench:before {
   content: '\e812';
@@ -1396,6 +1399,17 @@ hr {
   text-decoration: underline;
 }
 
+.contacts__email-link:hover,
+.contacts__skype-link:hover {
+  opacity: .7;
+}
+
+.contacts__email-link:active,
+.contacts__skype-link:active {
+  opacity: .3;
+  text-decoration: none;
+}
+
 .contacts__email-link {
   margin-bottom: 15px;
 }
@@ -1700,6 +1714,82 @@ hr {
 .help__img {
   display: block;
   width: 100%;
+}
+
+/*Activation page*/
+
+.activation {
+  position: relative;
+  padding: 0 0 100px 0;
+}
+
+.activation__title {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.429rem;
+  line-height: 1.42857;
+  text-transform: uppercase;
+  text-align: center;
+  color: #3e535f;
+}
+
+.activation__id-text {
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.143rem;
+  line-height: 2rem;
+  color: #000;
+}
+
+.activation__example {
+  margin: 0 0 15px 0;
+  padding: 0;
+  font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 2rem;
+  color: #000;
+}
+
+.activation__price {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 18px 26px 20px;
+  font-family: Open Sans, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.786rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #fff;
+  background: #4bbb7a;
+}
+
+.activation__icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 36px;
+  height: 28px;
+  margin: -2px 11px 0 5px;
+  padding: 0;
+  font-size: 2.286rem;
+  line-height: 2.286rem;
+}
+
+.activation__icon:before {
+  margin: 0;
+  padding: 0;
+}
+
+.activation__link {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /*Media Query*/
@@ -2121,7 +2211,7 @@ hr {
   /*Contacts*/
 
   .contacts--mb {
-    margin-bottom: 25%;
+    margin-bottom: 40%;
   }
 
   .contacts__title {
@@ -2153,11 +2243,12 @@ hr {
 
   .contacts__login,
   .contacts__email {
-    padding: 5px 10px 22px;
+    padding: 12px 10px;
   }
 
   .contacts__textarea {
     min-height: 245px;
+    padding: 12px 10px;
   }
 
   .contacts__btn {
@@ -2218,6 +2309,30 @@ hr {
 
   .help__icon {
     left: 10px;
+  }
+
+  /*Activation page*/
+
+  .activation__title {
+    text-align: left;
+  }
+
+  .activation--mb {
+    margin-bottom: 70%;
+  }
+
+  .activation__id-text,
+  .activation__example {
+    margin-left: 10px;
+  }
+
+  .activation__price {
+    top: 30px;
+    bottom: auto;
+    left: auto;
+    right: 0;
+    width: auto;
+    text-align: left;
   }
 
   .footer {

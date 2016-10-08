@@ -24,6 +24,7 @@
   <![endif]-->
 </head>
 <body>
+
 <!--Header-->
 <header class="header">
   <a href="index.html" class="header__logo">SpeedChat</a>
@@ -34,8 +35,10 @@
       </span>
   </button>
 </header>
-<!--Main content-->
+
+<!--Main-->
 <div class="main clear-fix">
+  <!--Sidebar-->
   <div id="sidebar" class="sidebar clear-fix">
     <a href="index.html" class="sidebar__logo">
       <img src="img/logo.png" alt="speedchat">
@@ -58,36 +61,33 @@
           <a href="help.html" class="nav__link">Помощь</a>
           <i class="nav__icon icon--lightbulb"></i>
         </li>
-        <li class="nav__item">
-          <a href="activation.html" class="nav__link">Активация</a>
+        <li class="nav__item nav__item--active">
+          <span class="nav__link">Активация</span>
           <i class="nav__icon icon--key"></i>
         </li>
-        <li class="nav__item nav__item--active">
-          <span class="nav__link">Контакты</span>
+        <li class="nav__item">
+          <a href="contacts.html" class="nav__link">Контакты</a>
           <i class="nav__icon icon--mail"></i>
         </li>
       </ul>
     </nav>
   </div>
+  <!--Main content-->
   <div class="main-content">
     <div class="wrapper">
-      <section class="contacts contacts--mb clear-fix">
-        <h2 class="contacts__title">Контактная информация</h2>
-        <a href="#" class="contacts__email-link"><i class="contacts__icon icon--mail"></i>speedchat@live.ru</a>
-        <a href="#" class="contacts__skype-link"><i class="contacts__icon icon--skype"></i>speed.chat</a>
-        <form class="contacts__form clear-fix" action="/echo" method="post">
-          <input class="contacts__login" type="text" name="login" placeholder="Ваше имя" required>
-          <input class="contacts__email" type="email" name="email" placeholder="Обратный адрес (e-mail)" required>
-          <textarea class="contacts__textarea" name="textarea" placeholder="Текст сообщения"></textarea>
-          <button class="contacts__btn" type="submit">
-            <i class="contacts__icon icon--paper-plane-empty"></i>
-            <span class="contacts__btn-text">Отправить</span>
-          </button>
-        </form>
+      <section class="activation activation--mb">
+        <h2 class="activation__title">Активация анкет</h2>
+        <p class="activation__id-text">Введите идентификаторы анкет для активации.</p>
+        <p class="activation__example"><b>Пример:</b> 1:c:1234567, 2:c:987654, 1:c:999999</p>
+        <p class="activation__price">
+          <i class="activation__icon icon--credit-card"></i>45 грн/мес
+        </p>
+        <a class="activation__link" href="img/activation.png" target="_blank"><img class="activation__img" src="img/activation.png" alt="activation"></a>
       </section>
     </div>
   </div>
 </div>
+
 <!--Footer-->
 <footer class="footer">
   <div class="wrapper clear-fix">
@@ -95,10 +95,13 @@
     <a class="footer__link" href="">Пользовательское соглашение</a>
   </div>
 </footer>
+<!--Social-->
+<section class="social">
 
+</section>
 <!--Popup-->
 <!--Class "popup-warning--off" close popup-->
-<div id="popup_warning" class="popup-warning ">
+<div id="popup_warning" class="popup-warning popup-warning--off">
   <i class="popup-warning__icon icon--wrench"></i>
   Ведутся технические работы! Просим прощения за причиненные неудобства.
   <i id="popup_warning_icon_close" class="popup-warning__icon icon--cancel"></i>
